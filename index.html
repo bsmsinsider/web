@@ -1,0 +1,280 @@
+<!--
+Copyright © 2026 BSMS Insider. 
+All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Student-run news, events, sports updates, and student life at Boiling Springs Middle School.">
+    <meta name="theme-color" content="#BB001E">
+
+    <title>BSMS Insider</title>
+
+    <!-- Site icons -->
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    <link rel="apple-touch-icon" href="./img/app-icon.png">
+
+    <!-- Social sharing metadata -->
+    <meta property="og:title" content="BSMS Insider">
+    <meta property="og:description" content="Student-Run News Account for Boiling Springs Middle School.">
+    <meta property="og:image" content="./img/legacy-pfp.png">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="BSMS Insider">
+    <meta name="twitter:description" content="Student-Run News Account for Boiling Springs Middle School.">
+    <meta name="twitter:image" content="./img/legacy-pfp.png">
+
+    <!-- Typography and third-party icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Homepage styles and behavior -->
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+</head>
+
+<body>
+    <!-- Decorative background effect -->
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <!-- Primary site navigation -->
+    <header class="site-header">
+        <nav class="navigation container" aria-label="Main navigation">
+            <a class="site-logo" href="#home" data-page="home" aria-label="BSMS Insider home">
+                <img src="./img/pfp.png" alt="" width="40" height="40">
+                <span>BSMS Insider</span>
+            </a>
+
+            <div class="navigation-links">
+                <a class="navigation-link is-active" href="#home" data-page="home" aria-current="page">Home</a>
+                <a class="navigation-link" href="#news" data-page="news">News</a>
+                <a class="navigation-link" href="#about" data-page="about">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content container">
+        <!-- Home page -->
+        <section class="page is-active" id="home" aria-labelledby="home-title">
+            <div class="hero">
+                <p class="hero-tagline">Student-Run News for BSMS</p>
+
+                <h1 class="hero-title" id="home-title">
+                    Welcome to<br>
+                    <span>BSMS Insider</span>
+                </h1>
+
+                <p class="hero-description">
+                    Your #1 source for events, sports updates,
+                    <br>
+                    and student life at Boiling Springs Middle School.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button" href="#news" data-page="news">
+                        <i data-feather="play-circle" aria-hidden="true"></i>
+                        Watch Latest
+                    </a>
+
+                    <a
+                        class="button button-outline"
+                        href="https://www.tiktok.com/@bsms.insider"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Follow @bsms.insider
+                    </a>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <!-- Current campus weather -->
+                <article class="card">
+                    <h2 class="card-title">
+                        <i data-feather="cloud" aria-hidden="true"></i>
+                        Campus Weather
+                    </h2>
+
+                    <div class="weather-content">
+                        <div class="temperature-group">
+                            <i
+                                class="weather-icon"
+                                id="weather-icon"
+                                data-feather="loader"
+                                aria-hidden="true"
+                            ></i>
+
+                            <div>
+                                <p class="temperature" id="temperature">--°</p>
+                                <p class="weather-condition" id="weather-condition" role="status">
+                                    Fetching data...
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="weather-details">
+                            Wind: <strong id="wind-speed">--</strong> mph
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Latest school announcement -->
+                <article class="card">
+                    <h2 class="card-title">
+                        <i data-feather="bell" aria-hidden="true"></i>
+                        Latest Announcement
+                    </h2>
+
+                    <p class="card-description">
+                        Stay updated with our newest daily announcements and
+                        upcoming school events. Check out our media page to
+                        see what's happening.
+                    </p>
+
+                    <a class="text-link" href="#news" data-page="news">
+                        Read More
+                        <i data-feather="arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- News and media page -->
+        <section class="page" id="news" aria-labelledby="news-title" hidden>
+            <div class="media-banner card">
+                <i class="media-banner-icon" data-feather="video" aria-hidden="true"></i>
+
+                <h1 class="media-banner-title" id="news-title">BSMS Insider on TikTok</h1>
+
+                <p class="media-banner-description">
+                    We post recaps, announcements, and sports highlights
+                    exclusively on our TikTok page. Check out our feed below!
+                </p>
+
+                <a
+                    class="button"
+                    href="https://www.tiktok.com/@bsms.insider"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i data-feather="external-link" aria-hidden="true"></i>
+                    Open TikTok App
+                </a>
+            </div>
+
+            <!-- TikTok creator feed -->
+            <div class="tiktok-container">
+                <blockquote
+                    class="tiktok-embed"
+                    data-theme="dark"
+                    cite="https://www.tiktok.com/@bsms.insider"
+                    data-unique-id="bsms.insider"
+                    data-embed-type="creator"
+                >
+                    <section>
+                        <a
+                            href="https://www.tiktok.com/@bsms.insider?refer=creator_embed"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            @bsms.insider
+                        </a>
+                    </section>
+                </blockquote>
+            </div>
+
+            <h2 class="section-heading">Content Categories</h2>
+
+            <div class="content-grid content-grid-three">
+                <article class="card category-card">
+                    <i data-feather="award" aria-hidden="true"></i>
+                    <h3>Sports</h3>
+                    <p>Game recaps and scores</p>
+                </article>
+
+                <article class="card category-card">
+                    <i data-feather="users" aria-hidden="true"></i>
+                    <h3>Student Life</h3>
+                    <p>The moments that make BSMS unique</p>
+                </article>
+
+                <article class="card category-card">
+                    <i data-feather="mic" aria-hidden="true"></i>
+                    <h3>Announcements</h3>
+                    <p>Need-to-know daily news</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- About page -->
+        <section class="page" id="about" aria-labelledby="about-title" hidden>
+            <article class="card">
+                <h1 class="card-title" id="about-title">
+                    <i data-feather="info" aria-hidden="true"></i>
+                    About BSMS Insider
+                </h1>
+
+                <div class="about-content">
+                    <p>
+                        <strong>BSMS Insider</strong> is an independent,
+                        student-run digital news network dedicated to bringing
+                        the latest updates directly to the student body of
+                        Boiling Springs Middle School.
+                    </p>
+
+                    <p>
+                        Founded with the goal of connecting students, our team
+                        covers everything from pep rallies and athletic events
+                        to club activities and daily announcements. We believe
+                        in providing a voice for the students, by the students.
+                    </p>
+                </div>
+
+                <h2 class="mission-heading">Our Mission Focus</h2>
+
+                <div class="team-grid">
+                    <article class="team-card">
+                        <div class="team-avatar">
+                            <i data-feather="camera" aria-hidden="true"></i>
+                        </div>
+                        <h3>Media &amp; Video</h3>
+                        <p>Capturing campus life in high quality</p>
+                    </article>
+
+                    <article class="team-card">
+                        <div class="team-avatar">
+                            <i data-feather="edit-3" aria-hidden="true"></i>
+                        </div>
+                        <h3>Journalism</h3>
+                        <p>Uncovering the stories that matter</p>
+                    </article>
+
+                    <article class="team-card">
+                        <div class="team-avatar">
+                            <i data-feather="share-2" aria-hidden="true"></i>
+                        </div>
+                        <h3>Community</h3>
+                        <p>Building school spirit online</p>
+                    </article>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> BSMS Insider</p>
+        <p class="footer-note">All rights reserved.</p>
+    </footer>
+
+    <!-- TikTok embed provider -->
+    <script async src="https://www.tiktok.com/embed.js"></script>
+</body>
+</html>
